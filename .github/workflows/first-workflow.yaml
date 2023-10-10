@@ -9,5 +9,5 @@ jobs:
         run: echo "Hello World"
       - name: Multiline Command 
         run: |  
-          node -v
-          npm
+          D:\Program Files\nodejs\node -v
+          D:\Program Files\nodejs\node_modules\npm\npm
