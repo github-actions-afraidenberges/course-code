@@ -1,1 +1,1 @@
-"# course-code"  
+# course-code  
