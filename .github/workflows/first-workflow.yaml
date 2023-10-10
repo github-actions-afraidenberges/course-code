@@ -3,13 +3,11 @@ on: [push]
 
 jobs:
   run-shell-commands:
-    runs-on:  windows-latest
+    runs-on:  ubuntu-latest
     steps: 
       - name: echo a string
         run: echo "Hello World"
       - name: Multiline Command 
-        run: |  
-          cd "D:\Program Files\nodejs"
-          node -v
-          cd "D:\Program Files\nodejs\node_modules\npm\bin"
+        run: |
+          node -v          
           npm
