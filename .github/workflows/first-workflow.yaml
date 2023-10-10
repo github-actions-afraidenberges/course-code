@@ -10,4 +10,4 @@ jobs:
       - name: Multiline Command 
         run: |  
           D:\Program Files\nodejs\node -v
-          D:\Program Files\nodejs\node_modules\npm\npm
+          D:\Program Files\nodejs\node_modules\npm\bin\npm
