@@ -9,4 +9,17 @@ jobs:
         run: echo "Hello World"
       - name: Multiline Command 
         run: |
-          node -v         
+          node -v
+  paralellel-job-macos:
+    runs-on: macos-latest
+    steps:
+      - name: View SW Version
+        run: sw_version
+  dependant-job:
+    runs-on:  windows-latest
+    needs: run-shell-commands
+    steps:
+      - name: echo a string
+        run: Write-Output "Windows String"
+      - name: Error Step
+        run: doesnotexists
